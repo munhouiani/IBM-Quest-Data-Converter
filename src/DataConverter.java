@@ -39,6 +39,14 @@ public class DataConverter {
                     new ConvertIbmToCsv(args[1], args[2]);
                 }
             }
+            else if (args[0].equals("-d")) {
+                if(args.length != 3) {
+                    printError();
+                }
+                else {
+                    new SeperateIbmWithComma(args[1], args[2]);
+                }
+            }
             else {
                 printError();
             }
@@ -55,5 +63,6 @@ public class DataConverter {
         System.out.println("\t-a\t Convert ascii data from IBM Quest Data Generator to Weka compatible csv");
         System.out.println("\t-b\t Convert conventional csv to Weka compatible csv");
         System.out.println("\t-c\t Convert ascii data from IBM Quest Data Generator to conventional csv");
+        System.out.println("\t-d\t Seperate ascii data from IBM Quest Data Generator with comma");
     }
 }
