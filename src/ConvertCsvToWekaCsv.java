@@ -21,6 +21,7 @@ public class ConvertCsvToWekaCsv {
             List<Item> itemList = new ArrayList<>();
             while((input_line = bufferedReader.readLine()) != null) {
                 int itemId;
+                lastTransId++;
                 Scanner scanner = new Scanner(new ByteArrayInputStream(input_line.getBytes()));
                 scanner.useDelimiter("[ ,\r\n]+");
                 while(scanner.hasNext()) {
