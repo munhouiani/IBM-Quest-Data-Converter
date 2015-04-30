@@ -22,7 +22,7 @@ public class ConvertCsvToWekaCsv {
             while((input_line = bufferedReader.readLine()) != null) {
                 int itemId;
                 Scanner scanner = new Scanner(new ByteArrayInputStream(input_line.getBytes()));
-                scanner.useDelimiter("[ \r\n,]");
+                scanner.useDelimiter("[ ,\r\n]+");
                 while(scanner.hasNext()) {
                     itemId = scanner.nextInt();
                     // a comparator to compare item in item list
