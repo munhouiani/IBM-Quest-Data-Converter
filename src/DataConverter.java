@@ -1,7 +1,3 @@
-import java.io.*;
-import java.nio.charset.Charset;
-import java.util.*;
-
 /**
  * Created by mhwong on 4/29/15.
  */
@@ -44,7 +40,7 @@ public class DataConverter {
                     printError();
                 }
                 else {
-                    new SeperateIbmWithComma(args[1], args[2]);
+                    new SeparateIbmWithComma(args[1], args[2]);
                 }
             }
             else {
@@ -63,6 +59,6 @@ public class DataConverter {
         System.out.println("\t-a\t Convert ascii data from IBM Quest Data Generator to Weka compatible csv");
         System.out.println("\t-b\t Convert conventional csv to Weka compatible csv");
         System.out.println("\t-c\t Convert ascii data from IBM Quest Data Generator to conventional csv");
-        System.out.println("\t-d\t Seperate ascii data from IBM Quest Data Generator with comma");
+        System.out.println("\t-d\t Separate ascii data from IBM Quest Data Generator with comma");
     }
 }

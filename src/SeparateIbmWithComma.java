@@ -5,9 +5,9 @@ import java.util.*;
 /**
  * Created by mhwong on 4/30/15.
  */
-public class SeperateIbmWithComma {
+public class SeparateIbmWithComma {
 
-    public SeperateIbmWithComma(String input, String output) {
+    public SeparateIbmWithComma(String input, String output) {
         seperateIbmWithComma(input, output);
     }
 
