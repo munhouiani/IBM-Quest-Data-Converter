@@ -57,3 +57,4 @@ Option:
 	-a	 Convert ascii data from IBM Quest Data Generator to Weka compatible csv
 	-b	 Convert conventional csv to Weka compatible csv
 	-c	 Convert ascii data from IBM Quest Data Generator to conventional csv
+	-d	 Separate ascii data from IBM Quest Data Generator with comma
