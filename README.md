@@ -51,9 +51,24 @@ Conventional CSV (Transactional Data)
 1
 ```
 
+## Separate IBM Quest Ascii Data with Comma
+```
+CustId	TransId	Item
+1	1	898
+1	1	987
+2	2	1
+```
+```
+CustId, TransId, Item
+1,	1,	 898
+1,	1,	 987
+2,	2,	 1
+```
+
 # Option
 Option:
 
 	-a	 Convert ascii data from IBM Quest Data Generator to Weka compatible csv
 	-b	 Convert conventional csv to Weka compatible csv
 	-c	 Convert ascii data from IBM Quest Data Generator to conventional csv
+	-d	 Separate ascii data from IBM Quest Data Generator with comma
